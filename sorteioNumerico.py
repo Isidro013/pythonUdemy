@@ -15,15 +15,16 @@ while tentativas <= 7:
     numero = int(input("Escolha um Número: "))
     if numero < num_secreto:
         print ("Tentativa {} de {}.".format(tentativas, chances))
-        print('Você errou, seu número é menor que o sorteado.'
-        'Tente novamente')
+        print('{} você errou, seu número é menor que o sorteado.'
+        'Tente novamente'.format(jogador))
     elif numero > num_secreto:
         print ("Tentativa {} de {}.".format(tentativas, chances))
-        print('Você errou, seu número é menor que o sorteado.'
-        'Tente novamente')
+        print('{} você errou, seu número é maior que o sorteado.'
+        'Tente novamente'.format(jogador))
     elif numero == num_secreto:
         print("PARABÉNS, {}".format(jogador))
-        print("Voce acertou com {}".format(tentativas))
+        print("{}, voce acertou com {} tentativas.".format(jogador, tentativas))
+        break
     tentativas = tentativas + 1
     if tentativas > 7:
         print("GAME OVER. O número secreto era {}".format(num_secreto))
