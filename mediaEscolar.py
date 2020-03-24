@@ -1,4 +1,4 @@
-print("Calcúlo de média escolar.")
+print("Calcúlo de média escolar. ")
 print("")
 nome = input("Escreva seu nome: ")
 materia = input("Entre com o nome da matéria: ")
